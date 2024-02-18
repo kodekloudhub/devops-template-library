@@ -1,25 +1,26 @@
-LAMP Stack Dockerfile
+# Dockerfile for LAMP Stack (Linux, Apache, MySQL, PHP)
 
-This Dockerfile sets up a LAMP stack in a Docker container, making it ideal for running PHP web applications. It uses the official PHP image with Apache and installs MySQL extensions, ensuring effortless connections to MySQL databases. Simply add your PHP code to the src directory, build, and run the container to quickly deploy your application.
+This Dockerfile configures a LAMP stack within a Docker container, making it perfect for running PHP web applications. It utilizes the official PHP image that comes with Apache and includes MySQL extensions to ensure seamless database connectivity for your applications. Simply add your PHP code to the `src` directory, build, and run the container for a quick and easy deployment.
 
-Features
+## Dockerfile Content
 
-PHP 7.4 with Apache: Uses the official PHP 7.4 image equipped with Apache.
-MySQL Extensions Installed: Includes mysqli, pdo, and pdo_mysql extensions for PHP, facilitating easy connections to MySQL databases.
-Quick Deployment: Add your PHP code to the src directory and deploy your application with ease.
-
-Dockerfile
+```dockerfile
 FROM php:7.4-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 COPY src/ /var/www/html/
 EXPOSE 80
 
-Usage Instructions
 
-Prepare Your PHP Application:
-Ensure your PHP application code is placed inside a src directory at the same location as this Dockerfile.
-Build the Docker Image:
-Execute the following command in the terminal, substituting my-lamp-app with your desired image name:
+## How to Use
 
-docker build -t my-lamp-app .
+1. **Prepare Your PHP Application**: Place your application's PHP code within a directory named `src`.
 
+2. **Build the Docker Image**: Execute the following command in your terminal, substituting `my-lamp-app` with your preferred name for the Docker image:
+    ```
+    docker build -t my-lamp-app .
+    ```
+
+3. **Run Your Container**: Start your container with the command below, which maps the container's port 80 to port 80 on your host, allowing you to access the application through `http://localhost`:
+    ```
+    docker run -p 80:80 my-lamp-app
+    ```
