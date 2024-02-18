@@ -9,11 +9,11 @@ FROM php:7.4-apache
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 COPY src/ /var/www/html/
 EXPOSE 80
-
+```
 
 ## How to Use
 
-1. ** Prepare Your PHP Application **: Place your application's PHP code within a directory named `src`.
+1. **Prepare Your PHP Application**: Place your application's PHP code within a directory named `src`.
 
 2. **Build the Docker Image**: Execute the following command in your terminal, substituting `my-lamp-app` with your preferred name for the Docker image:
     ```
