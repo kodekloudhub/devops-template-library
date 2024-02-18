@@ -42,10 +42,6 @@ Please ensure your submission follows this basic format:
 
 After submission, the repository maintainers will review your PR. This process might involve some discussion or requests for changes. We aim to handle PRs promptly, but response times can vary based on the current workload.
 
-## License
-
-Specify the license under which the templates are provided. Common choices include MIT, Apache 2.0, GPL, etc. Ensure you have the right to contribute the template under the chosen license.
-
 ---
 
 By contributing to the DevOps Template Library, you help build a valuable resource that benefits the entire DevOps community. Thank you for your support and contributions!
