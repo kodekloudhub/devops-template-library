@@ -1,6 +1,6 @@
 # Dockerfile for Java, Spring Boot
 
-This Dockerfile offers a fundamental configuration for Dockerizing Spring Boot applications. It utilizes the Openjdk:17-alpine image as the base, ensuring a lightweight and efficient container environment. With this setup, you can easily package your Spring Boot application for deployment. Once built and executed, your application will be accessible on port 8080, providing a seamless starting point for Spring Boot development within Docker.
+This Dockerfile offers a fundamental configuration for Dockerizing Spring Boot applications. It utilizes the `openjdk:17-alpine` image as the base, ensuring a lightweight and efficient container environment. With this setup, you can easily package your Spring Boot application for deployment. Once built and executed, your application will be accessible on port `8080`, providing a seamless starting point for Spring Boot development within Docker.
 
 ## Dockerfile
 
