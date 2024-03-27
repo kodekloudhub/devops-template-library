@@ -1,6 +1,6 @@
 # Dockerfile for Java, Spring Boot
 
-This Dockerfile provides a foundational setup for deploying MEAN stack web applications. It leverages the official Node.js image to install dependencies and prepare your application for execution. By building and running this Docker image, your application will be accessible on port 3000, offering a quick start to MEAN stack development.
+This Dockerfile offers a fundamental configuration for Dockerizing Spring Boot applications. It utilizes the OpenJDK:17-alpine image as the base, ensuring a lightweight and efficient container environment. With this setup, you can easily package your Spring Boot application for deployment. Once built and executed, your application will be accessible on port 8080, providing a seamless starting point for Spring Boot development within Docker.
 
 ## Dockerfile
 
